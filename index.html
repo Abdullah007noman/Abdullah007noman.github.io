@@ -13,16 +13,34 @@
       color: #333;
     }
 
+    /* ===== NAVBAR ===== */
+    nav {
+      background-color: #023e8a;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== HEADER ===== */
     header {
       background-color: #0077b6;
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.3rem;
     }
 
     header p {
@@ -30,13 +48,24 @@
       opacity: 0.9;
     }
 
+    /* ===== PROFILE IMAGE ===== */
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-top: 1rem;
+    }
+
+    /* ===== SECTION ===== */
     section {
       max-width: 800px;
       margin: 2rem auto;
-      padding: 1rem 2rem;
+      padding: 1.5rem 2rem;
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
@@ -67,16 +96,28 @@
   </style>
 </head>
 <body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#cv">CV</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ===== HEADER ===== -->
   <header>
-    <h1>Abdullah Al Noman</h1>
+    <img src="profile.jpg" alt="Abdullah Noman" class="profile-pic" />
+    <h1>Abdullah Noman</h1>
     <p>Researcher | Engineer | Learner</p>
-    <p><a href="mailto:a7noman@gmail.com" style="color:white;">a7noman@gmail.com</a></p>
   </header>
 
+  <!-- ===== ABOUT ===== -->
   <section id="about">
     <h2>About Me</h2>
     <p>
-      II'm a Doctoral Student (PhD) at The University of
+I'm a Doctoral Student (PhD) at The University of
 Texas at Arlington in Wireless Communication under
 the supervision of Dr. Debashri Roy. l'm very
 passionate about doing fantastic research to address
@@ -89,27 +130,49 @@ connected, more efficient, and sustainable.
     </p>
   </section>
 
+  <!-- ===== CV ===== -->
   <section id="cv">
     <h2>Curriculum Vitae</h2>
     <p>
-      Download my CV here:
-      <a href="cv.pdf" target="_blank">CV.pdf</a>
+      Download my latest CV here:
+      <a href="cv.pdf" target="_blank"><strong>CV.pdf</strong></a>
     </p>
   </section>
 
+  <!-- ===== PUBLICATIONS ===== -->
   <section id="publications">
     <h2>Publications</h2>
     <ul>
-      <li><strong>Title 1:</strong> xSpace-Air-Ground Network for Direct-to-Cell Communication <em>IEEE MILCOM</em>, 2025.</li>
-      <li><strong>Title 2:</strong> A Reliable and Secure Multicast Transport Protocol for Space-ground Integrated Networks using RBAC <em>15th International Conference on Computing Communication and Networking Technologies (ICCCNT)</em>, 2024.</li>
+      <li>
+        <strong>xSpace-Air-Ground Network for Direct-to-Cell Communication</strong>,
+        <em>IEEE MILCOM</em>, 2025.  
+        [<a href="https://doi.org/10.1109/MILCOM.2025.xxxxxx" target="_blank">DOI</a>]
+      </li>
+      <li>
+        <strong>A Reliable and Secure Multicast Transport Protocol for Space-Ground Integrated Networks using RBAC</strong>,
+        <em>15th International Conference on Computing Communication and Networking Technologies (ICCCNT)</em>, 2024.  
+        [<a href="https://doi.org/10.1109/ICCCNT.2024.xxxxxx" target="_blank">DOI</a>]
+      </li>
     </ul>
   </section>
 
+  <!-- ===== PROJECTS ===== -->
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><a href="https://github.com/Abdullah007noman/project1">Project 1</a> – Short project description.</li>
-      <li><a href="https://github.com/Abdullah007noman/project2">Project 2</a> – Another description.</li>
+      <li>Developing AI models optimized for deployment on embedded hardware.</li>
+      <li>Designing communication protocols for space-ground integrated network systems.</li>
+    </ul>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <h2>Contact & Links</h2>
+    <ul>
+      <li><strong>Email (personal):</strong> <a href="mailto:a7noman@gmail.com">a7noman@gmail.com</a></li>
+      <li><strong>Email (institute):</strong> <a href="mailto:yourname@university.edu">yourname@university.edu</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abdullah007noman" target="_blank">linkedin.com/in/abdullah007noman</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/Abdullah007noman" target="_blank">github.com/Abdullah007noman</a></li>
     </ul>
   </section>
 
