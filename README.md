@@ -1,5 +1,5 @@
 
-# 🌐 Abdullah Noman — Personal Website
+# 🌐 Abdullah Al Noman — Personal Website
 
 Welcome to the repository for my personal website, hosted at [abdullah007noman.github.io](https://abdullah007noman.github.io/).
 
