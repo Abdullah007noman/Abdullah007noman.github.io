@@ -114,10 +114,13 @@ figure:hover {
 
 .gallery img {
   width: 100%;
-  height: 180px;            /* Fixed height for uniform look */
-  object-fit: cover;        /* Crops and centers images nicely */
+  height: auto;             /* Keeps original proportions */
+  max-height: 300px;        /* Optional: limit height for consistency */
+  object-fit: contain;      /* Shows the full image without cropping */
   border-radius: 8px;
+  image-rendering: -webkit-optimize-contrast; /* Sharper rendering on webkit browsers */
 }
+
 
 figcaption {
   margin-top: 0.6rem;
