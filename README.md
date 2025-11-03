@@ -10,5 +10,5 @@ It’s built and maintained using **GitHub Pages**, allowing me to showcase my w
 
 ## 🚀 About the Site
 - **Website:** [abdullah007noman.github.io](https://abdullah007noman.github.io/)
-- **Purpose:** To display my portfolio, projects, and learning journey in web development.
+- **Purpose:** To display my portfolio, projects, and learning journey through my Ph.D life....
 
