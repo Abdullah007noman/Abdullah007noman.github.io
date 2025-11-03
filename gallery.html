@@ -5,9 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery | Abdullah Al Noman</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Gallery-specific styles (optional extra tweaks) */
+    figure {
+      text-align: center;
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
 
+  <!-- ===== NAVIGATION ===== -->
   <nav>
     <a href="index.html">About</a>
     <a href="cv.html">CV</a>
@@ -18,18 +31,50 @@
     <a href="contact.html">Contact</a>
   </nav>
 
+  <!-- ===== GALLERY SECTION ===== -->
   <section id="gallery">
     <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="setup.jpeg" alt="Research Setup">
-      <img src="con1.jpeg" alt="Conference Presentation">
-       <img src="con2.jpeg" alt="Conference Presentation">
-       <img src="con3.jpeg" alt="Conference Presentation">
-       <img src="con4.jpeg" alt="Conference Presentation">
+    <p style="text-align:center; color:#555;">
+      A glimpse into my research journey — conferences, lab work, and innovation in progress.
+    </p>
 
+    <div class="gallery">
+      <figure>
+        <img src="setup.jpeg" alt="Research Setup">
+        <figcaption>Research Setup</figcaption>
+      </figure>
+
+      <figure>
+        <img src="con2.jpeg" alt="Conference Presentation">
+        <figcaption>Conference Presentation</figcaption>
+      </figure>
+
+      <figure>
+        <img src="gallery3.jpeg" alt="Lab Work">
+        <figcaption>Lab Work</figcaption>
+      </figure>
+
+      <figure>
+        <img src="gallery4.jpg" alt="Poster Session">
+        <figcaption>Poster Session</figcaption>
+      </figure>
+
+      <figure>
+        <img src="gallery5.jpg" alt="Workshop Collaboration">
+        <figcaption>Workshop Collaboration</figcaption>
+      </figure>
+
+      <figure>
+        <img src="gallery6.jpg" alt="Field Experiment">
+        <figcaption>Field Experiment</figcaption>
+      </figure>
     </div>
   </section>
 
-  <footer>© 2025 Abdullah Al Noman</footer>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2025 Abdullah Al Noman | Built with ❤️ using GitHub Pages
+  </footer>
+
 </body>
 </html>
