@@ -143,6 +143,13 @@ figcaption {
 #publications ul li:not(:last-child) {
   margin-bottom: 20px;
 }
+.pub-desc {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
 
 /* ===== FOOTER ===== */
 footer {
