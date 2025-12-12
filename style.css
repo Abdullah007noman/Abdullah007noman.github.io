@@ -140,7 +140,7 @@ figcaption {
   font-weight: 500;
   color: #444;
 }
-publications ul li:not(:last-child) {
+#publications ul li:not(:last-child) {
   margin-bottom: 20px;
 }
 
