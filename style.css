@@ -1,4 +1,9 @@
 /* style.css */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
@@ -14,11 +19,13 @@ nav {
   gap: 2rem;
   padding: 1rem;
 }
+
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
+
 nav a:hover {
   text-decoration: underline;
 }
@@ -30,10 +37,12 @@ header {
   text-align: center;
   padding: 2.5rem 1rem;
 }
+
 header h1 {
   margin: 0;
   font-size: 2.3rem;
 }
+
 header p {
   font-size: 1.1rem;
   opacity: 0.9;
@@ -67,12 +76,11 @@ h2 {
 }
 
 h3 {
+  width: fit-content;
   color: #023e8a;
   text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin: 2.5rem auto 1rem;
   border-bottom: 2px solid #ccc;
-  display: inline-block;
   padding-bottom: 0.4rem;
 }
 
@@ -81,6 +89,7 @@ a {
   color: #0077b6;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -91,6 +100,7 @@ a:hover {
   padding: 0;
   margin: 0;
 }
+
 .contact-list li {
   margin-bottom: 8px;
 }
@@ -104,14 +114,17 @@ a:hover {
   align-items: start;
   margin-top: 1.5rem;
 }
+
+/* ===== GALLERY CATEGORY SELECTION ===== */
 .gallery-selection {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 50px 20px;
   text-align: center;
 }
 
 .gallery-selection > h2 {
+  margin-top: 0;
   margin-bottom: 10px;
   font-size: 2.2rem;
 }
@@ -133,13 +146,14 @@ a:hover {
   color: inherit;
   text-decoration: none;
   background: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .gallery-option:hover {
+  text-decoration: none;
   transform: translateY(-6px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
 }
@@ -150,6 +164,7 @@ a:hover {
 }
 
 .option-image img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -165,52 +180,46 @@ a:hover {
 }
 
 .option-content h3 {
+  width: auto;
   margin: 0 0 8px;
+  padding: 0;
+  border-bottom: none;
   font-size: 1.35rem;
 }
 
 .option-content p {
   margin: 0;
-  color: #666666;
+  color: #666;
   line-height: 1.5;
 }
 
-@media (max-width: 700px) {
-  .gallery-options {
-    grid-template-columns: 1fr;
-  }
-
-  .option-image {
-    height: 220px;
-  }
-}
-
 /* ===== GALLERY FIGURE BOX ===== */
-figure {
+.gallery figure {
+  width: 100%;
+  max-width: 280px;
+  margin: 0;
+  padding: 0.7rem;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 0.7rem;
   text-align: center;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  width: 100%;
-  max-width: 280px;
 }
 
-figure:hover {
+.gallery figure:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== UNIFORM IMAGE SIZE ===== */
-.gallery img {
+.gallery figure img {
+  display: block;
   width: 100%;
-  height: 220px;             /* uniform image height */
-  object-fit: cover;         /* fills box without stretching */
-  border-radius: 8px;
+  height: 220px;
+  object-fit: cover;
   border: 1px solid #eee;
+  border-radius: 8px;
   background-color: #fafafa;
-  image-rendering: -webkit-optimize-contrast; /* sharpen edges in Chrome/Safari */
 }
 
 /* ===== CAPTION ===== */
@@ -220,9 +229,12 @@ figcaption {
   font-weight: 500;
   color: #444;
 }
+
+/* ===== PUBLICATIONS ===== */
 #publications ul li:not(:last-child) {
   margin-bottom: 20px;
 }
+
 .pub-desc {
   margin-top: 8px;
   font-size: 0.95rem;
@@ -230,13 +242,33 @@ figcaption {
   line-height: 1.5;
 }
 
-
 /* ===== FOOTER ===== */
 footer {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  color: #555;
-  background-color: #f5f5f5;
   margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f5f5f5;
+  color: #555;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 700px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  section {
+    margin: 1rem;
+    padding: 1.25rem;
+  }
+
+  .gallery-options {
+    grid-template-columns: 1fr;
+  }
+
+  .option-image {
+    height: 220px;
+  }
 }
