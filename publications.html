@@ -1,160 +1,93 @@
-<section id="publications">
-  <h2>Publications</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | Abdullah Al Noman</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <div class="publication-list">
+<body>
 
-    <!-- Publication 1 -->
-    <div class="publication-card">
+  <nav>
+    <a href="index.html">About</a>
+    <a href="cv.html">CV</a>
+    <a href="publications.html">Publications</a>
+    <a href="projects.html">Projects</a>
+    <a href="teaching.html">Teaching Assistant</a>
+    <a href="reviewer.html">Reviewer Roles</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-      <div class="pub-main">
-        <h3>
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <ul>
+
+      <!-- Publication 1 -->
+      <li>
+        <strong>
           Graph-Spectral Identifiability and Cramer-Rao Bounds for Multistatic
           TDOA Geolocation with Uncertain Sensor Poses
-        </h3>
+        </strong><br>
 
-        <p class="authors">
-          Michel Kulhandjian,
-          <strong><em>Abdullah Al Noman</em></strong>,
-          and Debashri Roy
-        </p>
+        Michel Kulhandjian,
+        <strong><em>Abdullah Al Noman</em></strong>,
+        and Debashri Roy<br>
 
-        <div class="pub-meta">
-          <button class="pub-type conference" onclick="togglePublication(this)">
-            Conference Paper
-          </button>
+        <em>IEEE Military Communications Conference (MILCOM)</em>, 2026.
+        [<a href="Milcom'26.pdf" target="_blank" download>Download paper</a>]
 
-          <span>
-            IEEE Military Communications Conference (MILCOM), 2026.
-          </span>
-        </div>
-      </div>
-
-      <div class="pub-actions">
-        <a href="milcom26.pdf" target="_blank" title="View paper">▧</a>
-        <a href="milcom26.pdf" download title="Download paper">⬇</a>
-
-        <button class="expand-btn"
-                onclick="togglePublication(this)"
-                title="Show abstract">
-          +
-        </button>
-      </div>
-
-      <div class="pub-details">
-        <h4>Abstract</h4>
-
-        <p>
+        <p class="pub-desc">
           This work develops uncertainty-aware multistatic TDOA geolocation by
           jointly accounting for emitter location and receiver position errors,
           while establishing identifiability conditions and robust estimation
           strategies under correlated and outlier-contaminated sensor uncertainties.
         </p>
-
-        <a href="milcom26.pdf" target="_blank" class="details-link">
-          View Paper
-        </a>
-
-        <a href="milcom26.pdf" download class="details-link">
-          Download Paper
-        </a>
-      </div>
-
-    </div>
+      </li>
 
 
-    <!-- Publication 2 -->
-    <div class="publication-card">
-
-      <div class="pub-main">
-        <h3>
+      <!-- Publication 2 -->
+      <li>
+        <strong>
           Direct Position Determination of Non-Cooperative Emitters in the
           Delay-Doppler Domain
-        </h3>
+        </strong><br>
 
-        <p class="authors">
-          Michel Kulhandjian,
-          <strong><em>Abdullah Al Noman</em></strong>,
-          Hovannes Kulhandjian,
-          and Debashri Roy
-        </p>
+        Michel Kulhandjian,
+        <strong><em>Abdullah Al Noman</em></strong>,
+        Hovannes Kulhandjian,
+        and Debashri Roy<br>
 
-        <div class="pub-meta">
-          <button class="pub-type conference" onclick="togglePublication(this)">
-            Conference Paper
-          </button>
+        <em>60th Asilomar Conference on Signals, Systems, and Computers</em>, 2026.
 
-          <span>
-            60th Asilomar Conference on Signals, Systems, and Computers, 2026.
-          </span>
-        </div>
-      </div>
-
-      <div class="pub-actions">
-        <button class="expand-btn"
-                onclick="togglePublication(this)"
-                title="Show abstract">
-          +
-        </button>
-      </div>
-
-      <div class="pub-details">
-        <h4>Abstract</h4>
-
-        <p>
+        <p class="pub-desc">
           This work proposes a delay–Doppler-domain method for localizing
           non-cooperative high-mobility emitters, achieving a lower SNR threshold
           and higher accuracy than conventional TDOA/FDOA approaches.
         </p>
-      </div>
-
-    </div>
+      </li>
 
 
-    <!-- Publication 3 -->
-    <div class="publication-card">
-
-      <div class="pub-main">
-        <h3>
+      <!-- Publication 3 -->
+      <li>
+        <strong>
           TITAN: Twin-Informed Topology Adaptation for LAWN-enabled D2C Communication
-        </h3>
+        </strong><br>
 
-        <p class="authors">
-          Talip Tolga Sarı,
-          Rameez Ahmed,
-          <strong><em>Abdullah Al Noman</em></strong>,
-          Gökhan Seçinti,
-          Chris Dick,
-          and Debashri Roy
-        </p>
+        Talip Tolga Sarı,
+        Rameez Ahmed,
+        <strong><em>Abdullah Al Noman</em></strong>,
+        Gökhan Seçinti,
+        Chris Dick,
+        and Debashri Roy<br>
 
-        <div class="pub-meta">
-          <button class="pub-type preprint" onclick="togglePublication(this)">
-            Preprint
-          </button>
+        <em>arXiv</em>, 2026.
+        [<a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260300795T/abstract"
+            target="_blank">DOI</a>]
 
-          <span>arXiv, 2026.</span>
-        </div>
-      </div>
-
-      <div class="pub-actions">
-
-        <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260300795T/abstract"
-           target="_blank"
-           title="View publication">
-          ↗
-        </a>
-
-        <button class="expand-btn"
-                onclick="togglePublication(this)"
-                title="Show abstract">
-          +
-        </button>
-      </div>
-
-      <div class="pub-details">
-        <h4>Abstract</h4>
-
-        <p>
+        <p class="pub-desc">
           Developed TITAN, a digital twin–driven framework for adaptive UAV relay
           placement in low-altitude wireless networks, enabling reliable
           Direct-to-Cell (D2C) connectivity in urban disaster scenarios.
@@ -163,75 +96,29 @@
           over state-of-the-art methods using ray-traced channel modeling and
           Bayesian optimization.
         </p>
-
-        <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260300795T/abstract"
-           target="_blank"
-           class="details-link">
-          View Paper
-        </a>
-      </div>
-
-    </div>
+      </li>
 
 
-    <!-- Publication 4 -->
-    <div class="publication-card">
-
-      <div class="pub-main">
-        <h3>
+      <!-- Publication 4 -->
+      <li>
+        <strong>
           Space-Air-Ground Network for Direct-to-Cell Communication
-        </h3>
+        </strong><br>
 
-        <p class="authors">
-          <strong><em>Abdullah Al Noman</em></strong>,
-          Talip Tolga Sarı,
-          Sunday Amatare,
-          Gokhan Secinti,
-          and Debashri Roy
-        </p>
+        <strong><em>Abdullah Al Noman</em></strong>,
+        Talip Tolga Sarı,
+        Sunday Amatare,
+        Gokhan Secinti,
+        and Debashri Roy<br>
 
-        <div class="pub-meta">
-          <button class="pub-type conference" onclick="togglePublication(this)">
-            Conference Paper
-          </button>
+        <em>IEEE Military Communications Conference (MILCOM)</em>, 2025.
+        [<a href="https://ieeexplore.ieee.org/abstract/document/11310652"
+            target="_blank">DOI</a>]
+        [<a href="milcom.pdf" target="_blank" download>Download paper</a>]
+        [<a href="https://github.com/TWIST-Lab/Sionna-SAGIN"
+            target="_blank">Code</a>]
 
-          <span>
-            IEEE Military Communications Conference (MILCOM), 2025.
-          </span>
-        </div>
-      </div>
-
-      <div class="pub-actions">
-
-        <a href="https://ieeexplore.ieee.org/abstract/document/11310652"
-           target="_blank"
-           title="IEEE">
-          ↗
-        </a>
-
-        <a href="milcom.pdf"
-           download
-           title="Download paper">
-          ⬇
-        </a>
-
-        <a href="https://github.com/TWIST-Lab/Sionna-SAGIN"
-           target="_blank"
-           title="Code">
-          &lt;/&gt;
-        </a>
-
-        <button class="expand-btn"
-                onclick="togglePublication(this)"
-                title="Show abstract">
-          +
-        </button>
-      </div>
-
-      <div class="pub-details">
-        <h4>Abstract</h4>
-
-        <p>
+        <p class="pub-desc">
           We propose a UAV-enabled Space-Air-Ground Integrated Network (SAGIN)
           to overcome the capacity and reliability limitations of traditional
           Direct-to-Cell communication. By using altitude-optimized UAV relays
@@ -241,82 +128,30 @@
           <strong>91.7% throughput gain</strong>
           with minimal latency degradation.
         </p>
-
-        <a href="https://ieeexplore.ieee.org/abstract/document/11310652"
-           target="_blank"
-           class="details-link">
-          IEEE
-        </a>
-
-        <a href="milcom.pdf"
-           download
-           class="details-link">
-          Download Paper
-        </a>
-
-        <a href="https://github.com/TWIST-Lab/Sionna-SAGIN"
-           target="_blank"
-           class="details-link">
-          Code
-        </a>
-      </div>
-
-    </div>
+      </li>
 
 
-    <!-- Publication 5 -->
-    <div class="publication-card">
-
-      <div class="pub-main">
-        <h3>
+      <!-- Publication 5 -->
+      <li>
+        <strong>
           A Reliable and Secure Multicast Transport Protocol for Space-Ground
           Integrated Networks using RBAC
-        </h3>
+        </strong><br>
 
-        <p class="authors">
-          Madhukrishna Priyadarsini,
-          <strong><em>Abdullah Al Noman</em></strong>,
-          Vipul Patel,
-          and Subham Prakash
-        </p>
+        Madhukrishna Priyadarsini,
+        <strong><em>Abdullah Al Noman</em></strong>,
+        Vipul Patel,
+        and Subham Prakash<br>
 
-        <div class="pub-meta">
-          <button class="pub-type conference" onclick="togglePublication(this)">
-            Conference Paper
-          </button>
+        <em>
+          15th International Conference on Computing Communication and
+          Networking Technologies (ICCCNT)
+        </em>, 2024.
+        [<a href="https://ieeexplore.ieee.org/abstract/document/10725800"
+            target="_blank">DOI</a>]
+        [<a href="SAGIN RBAC.pdf" target="_blank" download>Download paper</a>]
 
-          <span>
-            15th International Conference on Computing Communication and
-            Networking Technologies (ICCCNT), 2024.
-          </span>
-        </div>
-      </div>
-
-      <div class="pub-actions">
-
-        <a href="https://ieeexplore.ieee.org/abstract/document/10725800"
-           target="_blank"
-           title="IEEE">
-          ↗
-        </a>
-
-        <a href="SAGIN RBAC.pdf"
-           download
-           title="Download paper">
-          ⬇
-        </a>
-
-        <button class="expand-btn"
-                onclick="togglePublication(this)"
-                title="Show abstract">
-          +
-        </button>
-      </div>
-
-      <div class="pub-details">
-        <h4>Abstract</h4>
-
-        <p>
+        <p class="pub-desc">
           We propose a reliable and secure multicast transport protocol for
           Space–Ground Integrated Networks using a role-based access control
           (RBAC) mechanism. The protocol enhances security through role-based
@@ -325,21 +160,12 @@
           throughput, low packet drop rate, minimal delay, and higher anomaly
           detection accuracy.
         </p>
+      </li>
 
-        <a href="https://ieeexplore.ieee.org/abstract/document/10725800"
-           target="_blank"
-           class="details-link">
-          IEEE
-        </a>
+    </ul>
+  </section>
 
-        <a href="SAGIN RBAC.pdf"
-           download
-           class="details-link">
-          Download Paper
-        </a>
-      </div>
+  <footer>© 2025 Abdullah Al Noman</footer>
 
-    </div>
-
-  </div>
-</section>
+</body>
+</html>
