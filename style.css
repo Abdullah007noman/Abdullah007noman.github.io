@@ -11,7 +11,11 @@ body {
   color: #333;
 }
 
-/* ===== NAVBAR ===== */
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
 nav {
   background-color: #023e8a;
   display: flex;
@@ -30,7 +34,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ===== HEADER ===== */
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
 header {
   background-color: #0077b6;
   color: white;
@@ -48,7 +56,11 @@ header p {
   opacity: 0.9;
 }
 
-/* ===== PROFILE IMAGE ===== */
+
+/* =========================================================
+   PROFILE IMAGE
+   ========================================================= */
+
 .profile-pic {
   width: 150px;
   height: 150px;
@@ -58,7 +70,11 @@ header p {
   margin-top: 1rem;
 }
 
-/* ===== SECTIONS ===== */
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
 section {
   max-width: 900px;
   margin: 2rem auto;
@@ -84,7 +100,11 @@ h3 {
   padding-bottom: 0.4rem;
 }
 
-/* ===== GENERAL LINKS ===== */
+
+/* =========================================================
+   GENERAL LINKS
+   ========================================================= */
+
 a {
   color: #0077b6;
   text-decoration: none;
@@ -94,7 +114,11 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ===== CONTACT LIST ===== */
+
+/* =========================================================
+   CONTACT LIST
+   ========================================================= */
+
 .contact-list {
   list-style-type: none;
   padding: 0;
@@ -105,7 +129,11 @@ a:hover {
   margin-bottom: 8px;
 }
 
-/* ===== GALLERY IMAGES ===== */
+
+/* =========================================================
+   GALLERY
+   ========================================================= */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -142,7 +170,11 @@ a:hover {
   background-color: #fafafa;
 }
 
-/* ===== GALLERY SELECTION PAGE ===== */
+
+/* =========================================================
+   GALLERY SELECTION PAGE
+   ========================================================= */
+
 .gallery-options {
   display: flex;
   justify-content: center;
@@ -182,7 +214,11 @@ a:hover {
   color: #666;
 }
 
-/* ===== CAPTION ===== */
+
+/* =========================================================
+   GALLERY CAPTIONS
+   ========================================================= */
+
 figcaption {
   margin-top: 0.6rem;
   font-size: 0.95rem;
@@ -190,40 +226,304 @@ figcaption {
   color: #444;
 }
 
-/* ===== PUBLICATIONS ===== */
-#publications ul li:not(:last-child) {
-  margin-bottom: 20px;
+
+/* =========================================================
+   PUBLICATIONS
+   ========================================================= */
+
+#publications {
+  max-width: 1100px;
 }
 
-.pub-desc {
-  margin-top: 8px;
-  font-size: 0.95rem;
-  color: #444;
+.publication-list {
+  width: 100%;
+}
+
+
+/* Publication card */
+
+.publication-card {
+  position: relative;
+  background: #ffffff;
+  margin-bottom: 18px;
+  padding: 22px 24px;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.publication-card:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Reserve space for right-side controls */
+
+.pub-main {
+  padding-right: 210px;
+}
+
+
+/* Publication title */
+
+.pub-main h3 {
+  width: auto;
+  margin: 0 0 10px 0;
+  padding: 0;
+  border-bottom: none;
+
+  text-align: left;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.35;
+
+  color: #41586f;
+}
+
+
+/* Authors */
+
+.authors {
+  margin: 0 0 8px 0;
+  font-size: 14px;
   line-height: 1.5;
+  color: #222;
 }
 
-/* ===== FOOTER ===== */
+
+/* Publication metadata */
+
+.pub-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+
+/* =========================================================
+   PUBLICATION TYPE BADGES
+   ========================================================= */
+
+.pub-type {
+  border: none;
+  padding: 4px 8px;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+
+  color: white;
+
+  border-radius: 2px;
+  cursor: pointer;
+
+  transition: opacity 0.2s ease;
+}
+
+.pub-type:hover {
+  opacity: 0.85;
+}
+
+
+/* Conference paper */
+
+.pub-type.conference {
+  background: #eea33a;
+}
+
+
+/* Journal paper */
+
+.pub-type.journal {
+  background: #4caf50;
+}
+
+
+/* Preprint */
+
+.pub-type.preprint {
+  background: #607d8b;
+}
+
+
+/* =========================================================
+   PUBLICATION RIGHT-SIDE ACTION BAR
+   ========================================================= */
+
+.pub-actions {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+
+  height: 40px;
+
+  border-top: 2px solid #00c98d;
+}
+
+.pub-actions a,
+.pub-actions button {
+  width: 52px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  background: #ffffff;
+
+  color: #999999;
+  font-family: inherit;
+  font-size: 16px;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.pub-actions a:hover {
+  color: #00b77c;
+  background: #f7f7f7;
+  text-decoration: none;
+}
+
+
+/* Expand button */
+
+.pub-actions .expand-btn {
+  background: #00c98d;
+  color: white;
+  font-size: 22px;
+}
+
+.pub-actions .expand-btn:hover {
+  background: #00b77c;
+}
+
+
+/* =========================================================
+   EXPANDED ABSTRACT
+   ========================================================= */
+
+.pub-details {
+  display: none;
+
+  margin-top: 22px;
+  padding-top: 18px;
+  padding-right: 10px;
+
+  border-top: 1px solid #e8e8e8;
+
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.pub-details.show {
+  display: block;
+}
+
+.pub-details h4 {
+  margin: 0 0 8px 0;
+
+  color: #41586f;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.pub-details p {
+  margin: 0 0 12px 0;
+}
+
+
+/* =========================================================
+   LINKS INSIDE EXPANDED PUBLICATION
+   ========================================================= */
+
+.details-link {
+  display: inline-block;
+
+  margin-top: 4px;
+  margin-right: 8px;
+
+  padding: 6px 12px;
+
+  background: #00c98d;
+  color: white;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  border-radius: 2px;
+  text-decoration: none;
+
+  transition: background-color 0.2s ease;
+}
+
+.details-link:hover {
+  background: #00ad79;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
 footer {
   margin-top: 2rem;
   padding: 1.5rem;
+
   background-color: #f5f5f5;
   color: #555;
+
   text-align: center;
   font-size: 0.9rem;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
 @media (max-width: 700px) {
+
+  /* Navbar */
 
   nav {
     flex-wrap: wrap;
     gap: 1rem;
   }
 
+
+  /* Sections */
+
   section {
     margin: 1rem;
     padding: 1.25rem;
   }
+
+
+  /* Gallery selection */
 
   .gallery-options {
     flex-direction: column;
@@ -233,5 +533,38 @@ footer {
   .gallery-card {
     width: 100%;
     max-width: 320px;
+  }
+
+
+  /* Publication cards */
+
+  .publication-card {
+    padding: 18px 18px 65px 18px;
+  }
+
+  .pub-main {
+    padding-right: 0;
+  }
+
+  .pub-main h3 {
+    font-size: 18px;
+  }
+
+  .pub-meta {
+    display: block;
+  }
+
+  .pub-meta span {
+    display: block;
+    margin-top: 7px;
+  }
+
+  .pub-actions {
+    right: 0;
+    bottom: 0;
+  }
+
+  .pub-details {
+    padding-right: 0;
   }
 }
