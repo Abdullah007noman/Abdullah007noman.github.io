@@ -11,11 +11,7 @@ body {
   color: #333;
 }
 
-
-/* =========================================================
-   NAVBAR
-   ========================================================= */
-
+/* ===== NAVBAR ===== */
 nav {
   background-color: #023e8a;
   display: flex;
@@ -34,11 +30,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-
-/* =========================================================
-   HEADER
-   ========================================================= */
-
+/* ===== HEADER ===== */
 header {
   background-color: #0077b6;
   color: white;
@@ -56,11 +48,7 @@ header p {
   opacity: 0.9;
 }
 
-
-/* =========================================================
-   PROFILE IMAGE
-   ========================================================= */
-
+/* ===== PROFILE IMAGE ===== */
 .profile-pic {
   width: 150px;
   height: 150px;
@@ -70,11 +58,7 @@ header p {
   margin-top: 1rem;
 }
 
-
-/* =========================================================
-   GENERAL SECTIONS
-   ========================================================= */
-
+/* ===== SECTIONS ===== */
 section {
   max-width: 900px;
   margin: 2rem auto;
@@ -100,11 +84,7 @@ h3 {
   padding-bottom: 0.4rem;
 }
 
-
-/* =========================================================
-   GENERAL LINKS
-   ========================================================= */
-
+/* ===== GENERAL LINKS ===== */
 a {
   color: #0077b6;
   text-decoration: none;
@@ -114,11 +94,7 @@ a:hover {
   text-decoration: underline;
 }
 
-
-/* =========================================================
-   CONTACT LIST
-   ========================================================= */
-
+/* ===== CONTACT LIST ===== */
 .contact-list {
   list-style-type: none;
   padding: 0;
@@ -129,11 +105,7 @@ a:hover {
   margin-bottom: 8px;
 }
 
-
-/* =========================================================
-   GALLERY
-   ========================================================= */
-
+/* ===== GALLERY IMAGES ===== */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -170,11 +142,7 @@ a:hover {
   background-color: #fafafa;
 }
 
-
-/* =========================================================
-   GALLERY SELECTION PAGE
-   ========================================================= */
-
+/* ===== GALLERY SELECTION PAGE ===== */
 .gallery-options {
   display: flex;
   justify-content: center;
@@ -214,11 +182,7 @@ a:hover {
   color: #666;
 }
 
-
-/* =========================================================
-   GALLERY CAPTIONS
-   ========================================================= */
-
+/* ===== CAPTION ===== */
 figcaption {
   margin-top: 0.6rem;
   font-size: 0.95rem;
@@ -226,60 +190,37 @@ figcaption {
   color: #444;
 }
 
-
+/* ===== PUBLICATIONS ===== */
 /* =========================================================
-   PUBLICATIONS
+   PUBLICATION CARDS
    ========================================================= */
-
-#publications {
-  max-width: 1100px;
-}
 
 .publication-list {
   width: 100%;
 }
 
-
-/* Publication card */
-
 .publication-card {
   position: relative;
-  background: #ffffff;
+  background: #fff;
   margin-bottom: 18px;
-  padding: 22px 24px;
+  padding: 22px 210px 22px 24px;
   border: 1px solid #eeeeee;
-  border-radius: 3px;
-  transition:
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
 }
 
 .publication-card:hover {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 
 
-/* Reserve space for right-side controls */
-
-.pub-main {
-  padding-right: 210px;
-}
-
-
-/* Publication title */
+/* Title */
 
 .pub-main h3 {
-  width: auto;
   margin: 0 0 10px 0;
-  padding: 0;
-  border-bottom: none;
-
-  text-align: left;
-
   font-size: 20px;
   font-weight: 400;
   line-height: 1.35;
-
   color: #41586f;
 }
 
@@ -289,43 +230,43 @@ figcaption {
 .authors {
   margin: 0 0 8px 0;
   font-size: 14px;
-  line-height: 1.5;
   color: #222;
 }
 
 
-/* Publication metadata */
+/* Publication information */
 
 .pub-meta {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
-
   font-size: 14px;
-  line-height: 1.5;
-  color: #333;
 }
 
 
-/* =========================================================
-   PUBLICATION TYPE BADGES
-   ========================================================= */
+/* Conference / Journal buttons */
 
 .pub-type {
   border: none;
   padding: 4px 8px;
-
-  font-family: inherit;
   font-size: 11px;
   font-weight: 600;
-
   color: white;
-
   border-radius: 2px;
   cursor: pointer;
+}
 
-  transition: opacity 0.2s ease;
+.pub-type.conference {
+  background: #eea33a;
+}
+
+.pub-type.journal {
+  background: #4caf50;
+}
+
+.pub-type.preprint {
+  background: #607d8b;
 }
 
 .pub-type:hover {
@@ -333,29 +274,8 @@ figcaption {
 }
 
 
-/* Conference paper */
-
-.pub-type.conference {
-  background: #eea33a;
-}
-
-
-/* Journal paper */
-
-.pub-type.journal {
-  background: #4caf50;
-}
-
-
-/* Preprint */
-
-.pub-type.preprint {
-  background: #607d8b;
-}
-
-
 /* =========================================================
-   PUBLICATION RIGHT-SIDE ACTION BAR
+   RIGHT-SIDE ACTION BAR
    ========================================================= */
 
 .pub-actions {
@@ -377,35 +297,26 @@ figcaption {
   height: 40px;
 
   display: flex;
-  align-items: center;
   justify-content: center;
-
-  margin: 0;
-  padding: 0;
+  align-items: center;
 
   border: none;
-  background: #ffffff;
+  background: #fff;
 
-  color: #999999;
-  font-family: inherit;
+  color: #999;
   font-size: 16px;
-
   text-decoration: none;
-  cursor: pointer;
 
-  transition:
-    color 0.2s ease,
-    background-color 0.2s ease;
+  cursor: pointer;
 }
 
 .pub-actions a:hover {
   color: #00b77c;
   background: #f7f7f7;
-  text-decoration: none;
 }
 
 
-/* Expand button */
+/* Green + button */
 
 .pub-actions .expand-btn {
   background: #00c98d;
@@ -425,15 +336,16 @@ figcaption {
 .pub-details {
   display: none;
 
+  grid-column: 1 / -1;
+
   margin-top: 22px;
   padding-top: 18px;
-  padding-right: 10px;
+  padding-right: 20px;
 
   border-top: 1px solid #e8e8e8;
 
+  line-height: 1.6;
   font-size: 14px;
-  line-height: 1.7;
-  color: #444;
 }
 
 .pub-details.show {
@@ -442,11 +354,8 @@ figcaption {
 
 .pub-details h4 {
   margin: 0 0 8px 0;
-
-  color: #41586f;
-
   font-size: 17px;
-  font-weight: 600;
+  color: #41586f;
 }
 
 .pub-details p {
@@ -454,96 +363,42 @@ figcaption {
 }
 
 
-/* =========================================================
-   LINKS INSIDE EXPANDED PUBLICATION
-   ========================================================= */
+/* Links inside expanded section */
 
 .details-link {
   display: inline-block;
 
-  margin-top: 4px;
   margin-right: 8px;
+  margin-top: 4px;
 
   padding: 6px 12px;
 
   background: #00c98d;
   color: white;
 
+  text-decoration: none;
   font-size: 13px;
-  font-weight: 500;
 
   border-radius: 2px;
-  text-decoration: none;
-
-  transition: background-color 0.2s ease;
 }
 
 .details-link:hover {
   background: #00ad79;
-  color: white;
-  text-decoration: none;
 }
 
 
 /* =========================================================
-   FOOTER
-   ========================================================= */
-
-footer {
-  margin-top: 2rem;
-  padding: 1.5rem;
-
-  background-color: #f5f5f5;
-  color: #555;
-
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-
-/* =========================================================
-   RESPONSIVE DESIGN
+   MOBILE
    ========================================================= */
 
 @media (max-width: 700px) {
-
-  /* Navbar */
-
-  nav {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-
-  /* Sections */
-
-  section {
-    margin: 1rem;
-    padding: 1.25rem;
-  }
-
-
-  /* Gallery selection */
-
-  .gallery-options {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gallery-card {
-    width: 100%;
-    max-width: 320px;
-  }
-
-
-  /* Publication cards */
 
   .publication-card {
     padding: 18px 18px 65px 18px;
   }
 
-  .pub-main {
-    padding-right: 0;
+  .pub-actions {
+    right: 0;
   }
 
   .pub-main h3 {
@@ -558,13 +413,38 @@ footer {
     display: block;
     margin-top: 7px;
   }
+}
 
-  .pub-actions {
-    right: 0;
-    bottom: 0;
+/* ===== FOOTER ===== */
+footer {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f5f5f5;
+  color: #555;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 700px) {
+
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
-  .pub-details {
-    padding-right: 0;
+  section {
+    margin: 1rem;
+    padding: 1.25rem;
+  }
+
+  .gallery-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-card {
+    width: 100%;
+    max-width: 320px;
   }
 }
