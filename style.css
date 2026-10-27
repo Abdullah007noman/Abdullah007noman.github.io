@@ -448,3 +448,107 @@ footer {
     max-width: 320px;
   }
 }
+/* =========================================================
+   PUBLICATIONS PAGE
+   ========================================================= */
+
+#publications {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 28px 50px 28px;
+}
+
+
+/* Section headings */
+.pub-section-title {
+  color: #005a9c;
+  font-size: 29px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+.conference-title {
+  margin-top: 42px;
+}
+
+
+/* Each publication */
+.publication {
+  font-size: 17px;
+  line-height: 1.45;
+  margin-bottom: 17px;
+  color: #000;
+}
+
+
+/* Publication numbering */
+.pub-number {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+
+/* Links */
+.publication a {
+  color: #005a9c;
+  text-decoration: underline;
+}
+
+.publication a:hover {
+  color: #003f70;
+}
+
+
+/* Paper title */
+.pub-title {
+  color: #005a9c;
+  text-decoration: underline;
+}
+
+
+/* Conference title when there is no URL yet */
+.conference-paper-title {
+  font-style: italic;
+}
+
+
+/* Authors */
+.publication strong {
+  font-weight: 700;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  #publications {
+    padding: 20px 18px 40px 18px;
+  }
+
+  .pub-section-title {
+    font-size: 25px;
+    margin-bottom: 22px;
+  }
+
+  .publication {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+
+  .conference-title {
+    margin-top: 35px;
+  }
+}
