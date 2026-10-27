@@ -533,6 +533,92 @@ footer {
 /* Mobile */
 @media (max-width: 768px) {
 
+
+/* =========================================================
+   PUBLICATIONS PAGE
+   ========================================================= */
+
+#publications {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 28px 50px 28px;
+}
+
+/* Section headings */
+.pub-section-title {
+  color: #005a9c;
+  font-size: 29px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+.conference-title {
+  margin-top: 42px;
+}
+
+/* Individual publications */
+.publication {
+  font-size: 17px;
+  line-height: 1.45;
+  margin-bottom: 19px;
+  color: #000;
+  text-align: left;
+}
+
+/* Numbering */
+.pub-number {
+  display: inline;
+  margin-right: 4px;
+  font-weight: 400;
+}
+
+/* Hyperlinks */
+.publication a {
+  color: #005a9c;
+  text-decoration: underline;
+}
+
+.publication a:hover {
+  color: #003f70;
+}
+
+/* Clickable publication titles */
+.pub-title {
+  color: #005a9c;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+/* Titles without an online publication link */
+.paper-title {
+  color: #000;
+  font-style: normal;
+}
+
+/* Author emphasis */
+.publication strong {
+  font-weight: 700;
+}
+
+/* Publication venue */
+.publication em {
+  font-style: normal;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
   #publications {
     padding: 20px 18px 40px 18px;
   }
@@ -551,4 +637,6 @@ footer {
   .conference-title {
     margin-top: 35px;
   }
+
 }
+
